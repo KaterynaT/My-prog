@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     url(r'^$', 'shortener.views.home', name='home'),
-    
+    url(r'^(?P<id>[a-zA-Z0-9]+)/$', 'shortener.views.link'),    
 ]
